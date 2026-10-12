@@ -1,0 +1,237 @@
+.nz-pm-toolbar__token {
+    flex-grow: 1;
+    min-width: 120px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.nz-pm-toolbar__account {
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    padding-left: 4px;
+}
+
+.nz-pm-list-pane {
+    min-width: 220px;
+    flex-grow: 1;
+}
+
+.nz-pm-search {
+    width: auto;
+    margin: 4px;
+}
+
+.nz-pm-count {
+    margin: 0 6px 2px 6px;
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+.nz-pm-list {
+    flex-grow: 1;
+}
+
+.nz-pm-group {
+    -unity-font-style: bold;
+    font-size: 11px;
+    padding: 6px 6px 2px 6px;
+    opacity: 0.7;
+}
+
+.nz-pm-row {
+    flex-direction: row;
+    padding: 4px 6px;
+    align-items: center;
+}
+
+.nz-pm-row__text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.nz-pm-row__name {
+    -unity-font-style: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nz-pm-row__sub {
+    font-size: 10px;
+    opacity: 0.65;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nz-pm-row__version {
+    -unity-text-align: middle-right;
+    font-size: 11px;
+    margin-left: 6px;
+}
+
+.nz-pm-refresh-bar {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.3);
+    padding: 2px 4px;
+}
+
+.nz-pm-refresh-bar__status {
+    flex-grow: 1;
+    font-size: 11px;
+    white-space: normal;
+}
+
+.nz-pm-details-scroll {
+    flex-grow: 1;
+}
+
+.nz-pm-details {
+    padding: 10px 14px;
+}
+
+.nz-pm-empty {
+    padding: 24px;
+    -unity-text-align: middle-center;
+    opacity: 0.7;
+}
+
+.nz-pm-header {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.nz-pm-header__text {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.nz-pm-title {
+    font-size: 18px;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.nz-pm-package-name {
+    opacity: 0.7;
+    margin-bottom: 6px;
+}
+
+.nz-pm-badge {
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    -unity-font-style: bold;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.nz-pm-badge--free {
+    background-color: rgba(60, 160, 90, 0.45);
+}
+
+.nz-pm-badge--owned {
+    background-color: rgba(60, 120, 200, 0.45);
+}
+
+.nz-pm-badge--paid {
+    background-color: rgba(200, 140, 40, 0.45);
+}
+
+.nz-pm-badge--update {
+    background-color: rgba(200, 90, 60, 0.45);
+}
+
+.nz-pm-description {
+    white-space: normal;
+    margin: 4px 0 10px 0;
+}
+
+.nz-pm-action-row {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nz-pm-version-field {
+    min-width: 180px;
+    margin-left: 0;
+}
+
+.nz-pm-version-field > .unity-base-field__label {
+    min-width: 50px;
+    width: 50px;
+}
+
+.nz-pm-action {
+    min-width: 110px;
+}
+
+.nz-pm-note {
+    white-space: normal;
+    margin-top: 6px;
+    opacity: 0.85;
+}
+
+.nz-pm-error {
+    color: rgb(230, 90, 80);
+}
+
+.nz-pm-progress {
+    margin: 6px 0 0 0;
+}
+
+.nz-pm-link-row {
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.nz-pm-link {
+    margin-left: 0;
+    margin-right: 6px;
+}
+
+.nz-pm-link--active {
+    -unity-font-style: bold;
+}
+
+.nz-pm-divider {
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.35);
+    margin: 10px 0;
+}
+
+.nz-pm-section-title {
+    -unity-font-style: bold;
+    margin: 8px 0 4px 0;
+}
+
+.nz-pm-meta-row {
+    flex-direction: row;
+    margin-bottom: 2px;
+}
+
+.nz-pm-meta-key {
+    width: 150px;
+    opacity: 0.7;
+}
+
+.nz-pm-meta-value {
+    flex-grow: 1;
+    flex-shrink: 1;
+    white-space: normal;
+}
+
+.nz-pm-doc {
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgba(128, 128, 128, 0.35);
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.nz-pm-doc__text {
+    white-space: normal;
+}
