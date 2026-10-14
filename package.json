@@ -1,7 +1,7 @@
 {
   "name": "com.enzisoft.packages",
   "displayName": "Enzisoft Packages",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "unity": "6000.0",
   "description": "Installs and updates the Enzisoft packages you own. Packages are saved as Packages/<name>.tgz and referenced with a relative file: dependency, so projects keep working without this manager, a login or the registry.",
   "author": {

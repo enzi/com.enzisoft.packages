@@ -91,7 +91,7 @@ namespace Enzisoft.Packages.Editor
                         var code = QueryValue(target, "code");
                         if (QueryValue(target, "state") != expectedState || string.IsNullOrEmpty(code))
                         {
-                            await RespondAsync(stream, "400 Bad Request", "This sign-in doesn't match the one Unity started. Start it again from the Enzisoft Packages window.");
+                            await RespondAsync(stream, "400 Bad Request", "This sign-in doesn't match the one Unity started. Start it again from the Enzisoft Package Manager.");
                             throw new InvalidOperationException("The browser returned an unexpected sign-in response. Please try again.");
                         }
 

@@ -18,7 +18,7 @@ Unity 6000.0 or newer. No other Enzisoft package is required; Unity's Newtonsoft
 2. Open **Window > Package Management > Enzisoft Packages**.
 3. Click **Sign in**. The browser opens; sign in with Google, GitHub or an emailed link to your purchase address and allow
    the Editor. Each Editor gets its own token, stored in your user's Editor preferences, never in the project. Free
-   packages need no sign-in.
+   packages need a sign-in too; without a purchase, sign in with Google or GitHub.
 
 The manager is listed in its own window as well: **Switch to .tgz** vendors it like any other package, and later versions
 then arrive as **Update**.

@@ -178,7 +178,7 @@ namespace Enzisoft.Packages.Editor
         {
             _toolbar.Clear();
             var label = new Label(string.IsNullOrEmpty(Token)
-                ? "Not signed in. Free packages are available; sign in to install the ones you bought."
+                ? "Not signed in. Sign in to install free packages and the ones you bought."
                 : $"Signed in as {(string.IsNullOrEmpty(AccountName) ? "your Enzisoft account" : AccountName)}");
             label.AddToClassList("nz-pm-toolbar__account");
             _toolbar.Add(label);
@@ -273,7 +273,7 @@ namespace Enzisoft.Packages.Editor
                 {
                     // Revoked on the account page or expired: continue signed out.
                     ClearSignIn();
-                    Debug.Log("Enzisoft Packages: the saved sign-in is no longer valid. Sign in again to see purchased packages.");
+                    Debug.Log("Enzisoft Packages: the saved sign-in is no longer valid. Sign in again to install packages.");
                 }
 
                 catalog = await Client.GetCatalogAsync(cancellationToken);
@@ -405,7 +405,7 @@ namespace Enzisoft.Packages.Editor
             return entry.Catalog?.Access switch
             {
                 PackageAccess.None => "Paid",
-                PackageAccess.Free => $"{entry.Catalog.LatestAccessible}  Free",
+                PackageAccess.Free => $"{entry.Catalog.LatestAccessible}  Free".TrimStart(), // no version while signed out
                 _ => entry.Catalog?.LatestAccessible ?? string.Empty,
             };
         }
@@ -644,6 +644,8 @@ namespace Enzisoft.Packages.Editor
 
             switch (entry.Catalog.Access)
             {
+                case PackageAccess.Free when string.IsNullOrEmpty(Token):
+                    return "Free package. Sign in above to install it.";
                 case PackageAccess.None:
                     return string.IsNullOrEmpty(Token)
                         ? "Paid package. If you bought it, sign in above."
